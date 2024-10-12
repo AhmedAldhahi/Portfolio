@@ -1,0 +1,71 @@
+i {
+  margin-right: 5px; /* Space between icon and text */
+  color: #efeef3; /* Match the icon color to your theme */
+}
+h2 {
+  margin-bottom: 15px; /* Space below the heading */
+  color: #560f9d; /* Match your theme */
+  font-size: 2.5rem;
+}
+h3 {
+  color: #a953fa;
+  font-size: 2rem;
+}
+p,
+ul {
+  line-height: 1.6; /* Improved line height for readability */
+  margin-bottom: 10px; /* Space between paragraphs */
+  color: #efeef3;
+}
+/* a{
+    color: rgb(250, 128, 7); /* Link color 
+    text-decoration: none;  Remove underline
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover 
+    color: #7b5eaa; Slightly lighter color on hover
+} */
+
+/* Gradient for "Full Stack" */
+.gradient-text {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* For WebKit browsers */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Fallback */
+}
+
+/* Solid color for "Developer" */
+.solid-text {
+  color: var(--text-color); /* Or any other solid color you choose */
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.soft-bio {
+  font-size: 1.2rem;
+  color: var(--text-color); /* Use your theme color */
+  margin-top: 10px; /* Adds some spacing below the title */
+  /* opacity: 0.85; Makes the text slightly softer */
+  font-weight: 500;
+}
+.profile-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between;
+    
+  }
+  
+  .profile-pic {
+    width: 500px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid var(--accent-color); /* Optional: border color */
+  }

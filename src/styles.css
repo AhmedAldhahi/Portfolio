@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #cf7afe;
+  --secondary-color: #aa014c;
+  --background-color: #101017;
+  --text-color: #f2e9f8;
+  --accent-color: #fe344b;
+}
+
+[data-theme="dark"] {
+  --primary-color: #2980b9;
+  --secondary-color: #27ae60;
+  --background-color: #10101b;
+  --text-color: #f2e9f8;
+}
+
+body {
+  background-color: var(--background-color);
+  /* background-color: #0d0a10; */
+  margin: 0;
+  /* padding: 0 0 50px; */
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+.text {
+  color: #51217f;
+}
+body.dark-mode {
+  background-color: #2c2c2c; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+}

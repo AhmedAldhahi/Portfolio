@@ -1,0 +1,74 @@
+.controls-container{
+    border: 5px solid #51217f;
+    border-radius: 10px;
+    margin: 10px;
+    height: 450px;
+    width: 200px;
+    padding: 20px;
+    background-color: #f0e5f9;
+    box-shadow: 0 4px 10px violet; 
+}
+.inner-con{
+    display: flex;
+    justify-content: center;
+}
+/* #controls-title{
+    text-align: center;
+    font-weight: bold;
+    color: #51217f;
+    font-size: 1.5rem;
+    font-family:'Merriweather', serif; ;
+} */
+#controls-title {
+    text-align: center;
+    font-weight: bold;
+    color: #51217f;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    z-index: 1;
+    background-color: #e9defa;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+#controls-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Change this to bottom for inversion */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100%;
+    background-color: #c5a3e7;
+    z-index: -1;
+    border-radius: 0 0 50% 50%; /* Inverted: Rounded bottom half */
+    padding: 10px 0;
+}
+/* Toggle Button Styles */
+/* .toggle-button {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #e9defa;
+    border: 2px solid #51217f;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: ${isDarkMode ? 'flex-end' : 'flex-start'};
+    transition: justify-content 0.3s;
+} */
+
+.slider {
+    width: 26px;
+    height: 26px;
+    background-color: #c5a3e7;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    position: absolute;
+    left: 2px;
+}
+

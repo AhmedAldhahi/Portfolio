@@ -1,0 +1,89 @@
+.item {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 200px;
+  border: var(--secondary-color) solid 5px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  position: relative;
+}
+.card-title {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: "Merriweather", serif;
+}
+
+.text-container {
+  margin-left: 35px;
+}
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  image-rendering: crisp-edges;
+  /* border-bottom:2px solid #d2b5f5 ; */
+}
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .card1 {
+    width: 100%; /* Full width on mobile */
+  }
+  .header-title {
+    font-size: 1.5rem; /* Slightly smaller for mobile */
+  }
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  z-index: 10; /* Make sure text stays on top */
+  border-radius: 0 0 5px 5px; /* Round only the bottom corners */
+
+  /* Add blur to the background */
+  backdrop-filter: blur(10px); /* Adjust the blur value */
+  border-radius: 10px; /* Optional: round the corners for a smoother look */
+}
+
+
+/* @media(max-width: 1000px) {
+    .Container{
+        flex-direction: column;
+        height: 100%;
+    } 
+} */
+/* .Container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    height: 100vh;
+    align-items: center;
+} */
+/* .paragrapgh{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+} */
+/* .inner-container1{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+/* height: 300px;  */
+/* took half of the card and then flexed it */
+/* border-bottom: black solid 4px ; */

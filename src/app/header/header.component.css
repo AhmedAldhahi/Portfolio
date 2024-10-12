@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.main-headerCon {
+  background-color: #b697d5;
+  color: #efeef3;
+  background: linear-gradient(135deg, #10101b, #220a3a, #10101b);
+  /* background: radial-gradient(#220a3a,var(--background-color) 100%); */
+  /* background: repeating-linear-gradient(to right,#10101b, #220a3a 10%, #10101b 20%); */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+}
+.card-headerCon {
+  background: radial-gradient(
+    circle,
+    #220a3a,
+    var(--secondary-color),
+    #220a3a
+  );
+
+  border-radius: 10px;
+  max-width: 2200px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+  /* Add a soft shadow to remove the "boxy" appearance */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: fadeInDown 1s ease-in-out;
+  font-family: "Merriweather", serif;
+  animation-delay: 0.2s; /* Small delay before starting the animation */
+  opacity: 0; /* Ensure starting opacity is 0 */
+  animation-fill-mode: forwards; /* Ensure it stays at the final state after animation */
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

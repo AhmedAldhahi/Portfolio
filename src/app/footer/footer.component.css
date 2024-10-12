@@ -1,0 +1,62 @@
+.portfolio-footer {
+    background-color: #101017; /* Background color matching your theme */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.footer-content div {
+    flex: 1; /* Equal width for all sections */
+    margin: 0 15px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif; /* Use the same font as the rest of your site */
+    font-size: 1.5rem; /* Increase the size of section titles */
+}
+
+.footer-content p, 
+.footer-content a {
+    font-size: 1rem; /* Increase text size for paragraph and links */
+    color: #d3d3d3; /* Lighter color for text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-content a:hover {
+    color: #8f37e3; /* Change color on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 1rem; /* Adjust size for bottom text if needed */
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align social links */
+}
+
+.footer-social a {
+    margin: 5px 0; /* Space between social links */
+    font-size: 1rem; /* Increase size of social links */
+}
